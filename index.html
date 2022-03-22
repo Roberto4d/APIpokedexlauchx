@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Montserrat:wght@500&family=Press+Start+2P&family=Rammetto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>pokedex</title>
+   
+</head>
+<body>
+
+    <section class="firstpart">
+        <h1 class="title">Pokedex Launch X</h1>
+        <img src="assets/Pokemon-Ash-and-Pikachu.png">
+    </section>
+    <h3>By: Roberto Duran</h3>
+    <section class="pokedex">
+        <img class="pokedeximg" src="assets/pokedex.png">
+    </section>
+    <section class="pokeinfo">
+        <img class="pokemonimg"src="assets/pokeball.png" id="pokeImg" >
+        <input type="text" placeholder="Buscar" id="pokeName" name="pokeName" class="pokeName"><br>
+        <button class="pokebutton" onclick="fetchPokemon() "><img src="assets/pokebola.png"></button>
+    </section>
+    <section class="pokeinfo1">
+        <h2 class="pokemonName" id="pokeNames"></h2>
+        <h2 class="pokemonType" id="pokeType"></h2>
+        <h2 class="pokemonHp" id="pokeHp"></h2>
+        <h2 class="pokemonAttack" id="pokeAttack"></h2>
+        <h2 class="pokemonDefense" id="pokeDefense"></h2>
+        <h2 class="pokemonSpa" id="pokeSpa"></h2>
+        <h2 class="pokemonSpd" id="pokeSpd"></h2>
+        <h2 class="pokemonSpeed" id="pokeSpeed"></h2>
+        <h2 class="pokeMoves1" id="pokeMove1"></h2>
+        <h2 class="pokeMoves1" id="pokeMove2"></h2>
+    </section>
+
+    
+   
+    <footer> <script src="app.js"></script></footer>
+</body>
+</html>

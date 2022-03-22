@@ -1,0 +1,14 @@
+//varibles
+@use 'global' as *;
+
+//Firstpart
+@use 'firstpart' as *;
+
+//pokedex
+@use 'pokedex' as *;
+
+h3{
+    font-family: $title;
+    font-size: 18px;
+    text-align: center;
+}

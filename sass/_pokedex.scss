@@ -1,0 +1,337 @@
+//varibles
+@use 'global' as *;
+
+@mixin for-phone-only {
+    @media (max-width: 425px) { @content; }
+  }
+
+@mixin for-laptop {
+    @media (min-width: 1024px) { @content; }
+}
+
+@mixin for-laptop-L {
+    @media (min-width: 1440px) { @content; }
+}
+
+.pokedex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    @include for-phone-only(){
+        padding: 0;
+        display: flex;
+        justify-content: flex-start
+        
+    }
+
+    }
+    .pokedeximg{
+        max-width: 700px;
+        @include for-phone-only(){
+            max-width: 474px;
+        }
+    }
+.pokeinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    .pokemonimg{
+        position: relative;
+        top: -460px; 
+        left: -80px;
+        max-width: 100px;
+        @include for-phone-only(){
+            max-width: 60px;
+            position: relative;
+            top: -230px;
+            left: -15px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -420px; 
+            left: -80px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -460px; 
+            left: -80px;
+        }
+    }
+    .pokebutton{
+        background-color: $blue;
+        border-radius: 50%;
+        border: none;
+        padding: 7px;
+        position: relative;
+        top: -320px; 
+        left: -410px;
+        @include for-phone-only(){
+            position: relative;
+            padding: 3px;
+            top: -139px;
+            left: -248px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -278px; 
+            left: -410px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -320px; 
+            left: -410px;
+        }
+    }
+    .pokebutton:hover{
+        background-color: $red;
+    }
+    .pokeName{
+        position: relative;
+        background-color: $yellow;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        top: -270px; 
+        left: -257px;
+       
+        @include for-phone-only(){
+            position: relative;
+            padding: 5px;
+            max-width: 100px;
+            top: -103px;
+            left: -134px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -228px; 
+            left: -257px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -270px; 
+            left: -257px;
+        }
+        
+    }
+}
+.pokeinfo1{
+    .pokemonName{
+        font-size: 12px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -654px; 
+        left: 433px;
+        @include for-phone-only(){
+            position: relative;
+            top: -336px;
+            left: 45px;
+            font-size: 10px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -597px; 
+            left: 221px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -654px; 
+            left: 433px;
+        }
+        
+    }
+    .pokemonType{
+        font-size: 12px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -654px; 
+        left: 433px;
+        @include for-phone-only(){
+            position: relative;
+            top: -336px;
+            left: 45px;
+            font-size: 10px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -599px; 
+            left: 220px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -654px; 
+            left: 433px;
+        }
+    }
+    .pokemonHp{
+        font-size: 10px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -615px; 
+        left: 433px;
+        @include for-phone-only(){
+            position: relative;
+            top: -316px;
+            left: 45px;
+            font-size: 8px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -549px; 
+            left: 217px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -615px; 
+            left: 433px;
+        }
+    }
+    .pokemonAttack{
+        font-size: 10px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -615px; 
+        left: 433px;
+        @include for-phone-only(){
+            position: relative;
+            top: -316px;
+            left: 45px;
+            font-size: 8px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -549px; 
+            left: 217px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -615px; 
+            left: 433px;
+        }
+    }
+    .pokemonDefense{
+        font-size: 10px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -615px; 
+        left: 433px;
+        @include for-phone-only(){
+            position: relative;
+            top: -316px;
+            left: 45px;
+            font-size: 8px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -549px; 
+            left: 217px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -615px; 
+            left: 433px;
+        }
+    }
+    .pokemonSpa{
+        font-size: 10px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -672px; 
+        left: 556px; 
+        @include for-phone-only(){
+            position: relative;
+            top: -360px;
+            left: 124px;
+            font-size: 8px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -603px; 
+            left: 353px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -672px; 
+            left: 556px;
+        }
+    }
+    .pokemonSpd{
+        font-size: 10px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -672px; 
+        left: 556px; 
+        @include for-phone-only(){
+            position: relative;
+            top: -360px;
+            left: 124px;
+            font-size: 8px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -603px; 
+            left: 353px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -672px; 
+            left: 556px;
+        }
+    }
+    .pokemonSpeed{
+        font-size: 10px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -672px; 
+        left: 556px; 
+        @include for-phone-only(){
+            position: relative;
+            top: -360px;
+            left: 131px;
+            font-size: 8px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -603px; 
+            left: 353px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -672px; 
+            left: 556px;
+        }
+    }
+    .pokeMoves1{
+        font-size: 10px;
+        font-family: $pressStart;
+        color: $white;
+        position: relative;
+        top: -786px; 
+        left: 778px; 
+        @include for-phone-only(){
+            position: relative;
+            top: -446px;
+            left: 285px;
+            font-size: 8px;
+        }
+        @include for-laptop(){
+            position: relative;
+            top: -726px; 
+            left: 577px;
+        }
+        @include for-laptop-L(){
+            position: relative;
+            top: -786px; 
+            left: 778px;
+        }
+    }  
+}

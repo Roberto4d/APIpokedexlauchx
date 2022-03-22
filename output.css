@@ -1,0 +1,438 @@
+.firstpart {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .firstpart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+}
+.firstpart .title {
+  font-size: 40px;
+  text-align: left;
+  font-family: "Rammetto One", cursive;
+}
+@media (max-width: 425px) {
+  .firstpart .title {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Rammetto One", cursive;
+  }
+}
+.firstpart img {
+  max-height: 300px;
+}
+@media (max-width: 425px) {
+  .firstpart img {
+    max-height: 300px;
+    align-items: center;
+  }
+}
+
+.pokedex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+@media (max-width: 425px) {
+  .pokedex {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.pokedeximg {
+  max-width: 700px;
+}
+@media (max-width: 425px) {
+  .pokedeximg {
+    max-width: 474px;
+  }
+}
+
+.pokeinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.pokeinfo .pokemonimg {
+  position: relative;
+  top: -460px;
+  left: -80px;
+  max-width: 100px;
+}
+@media (max-width: 425px) {
+  .pokeinfo .pokemonimg {
+    max-width: 60px;
+    position: relative;
+    top: -230px;
+    left: -15px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo .pokemonimg {
+    position: relative;
+    top: -420px;
+    left: -80px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo .pokemonimg {
+    position: relative;
+    top: -460px;
+    left: -80px;
+  }
+}
+.pokeinfo .pokebutton {
+  background-color: #00aaf7;
+  border-radius: 50%;
+  border: none;
+  padding: 7px;
+  position: relative;
+  top: -320px;
+  left: -410px;
+}
+@media (max-width: 425px) {
+  .pokeinfo .pokebutton {
+    position: relative;
+    padding: 3px;
+    top: -139px;
+    left: -248px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo .pokebutton {
+    position: relative;
+    top: -278px;
+    left: -410px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo .pokebutton {
+    position: relative;
+    top: -320px;
+    left: -410px;
+  }
+}
+.pokeinfo .pokebutton:hover {
+  background-color: #fe1a55;
+}
+.pokeinfo .pokeName {
+  position: relative;
+  background-color: #f9ee60;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  top: -270px;
+  left: -257px;
+}
+@media (max-width: 425px) {
+  .pokeinfo .pokeName {
+    position: relative;
+    padding: 5px;
+    max-width: 100px;
+    top: -103px;
+    left: -134px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo .pokeName {
+    position: relative;
+    top: -228px;
+    left: -257px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo .pokeName {
+    position: relative;
+    top: -270px;
+    left: -257px;
+  }
+}
+
+.pokeinfo1 .pokemonName {
+  font-size: 12px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -654px;
+  left: 433px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonName {
+    position: relative;
+    top: -336px;
+    left: 45px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonName {
+    position: relative;
+    top: -597px;
+    left: 221px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonName {
+    position: relative;
+    top: -654px;
+    left: 433px;
+  }
+}
+.pokeinfo1 .pokemonType {
+  font-size: 12px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -654px;
+  left: 433px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonType {
+    position: relative;
+    top: -336px;
+    left: 45px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonType {
+    position: relative;
+    top: -599px;
+    left: 220px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonType {
+    position: relative;
+    top: -654px;
+    left: 433px;
+  }
+}
+.pokeinfo1 .pokemonHp {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -615px;
+  left: 433px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonHp {
+    position: relative;
+    top: -316px;
+    left: 45px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonHp {
+    position: relative;
+    top: -549px;
+    left: 217px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonHp {
+    position: relative;
+    top: -615px;
+    left: 433px;
+  }
+}
+.pokeinfo1 .pokemonAttack {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -615px;
+  left: 433px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonAttack {
+    position: relative;
+    top: -316px;
+    left: 45px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonAttack {
+    position: relative;
+    top: -549px;
+    left: 217px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonAttack {
+    position: relative;
+    top: -615px;
+    left: 433px;
+  }
+}
+.pokeinfo1 .pokemonDefense {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -615px;
+  left: 433px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonDefense {
+    position: relative;
+    top: -316px;
+    left: 45px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonDefense {
+    position: relative;
+    top: -549px;
+    left: 217px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonDefense {
+    position: relative;
+    top: -615px;
+    left: 433px;
+  }
+}
+.pokeinfo1 .pokemonSpa {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -672px;
+  left: 556px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonSpa {
+    position: relative;
+    top: -360px;
+    left: 124px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonSpa {
+    position: relative;
+    top: -603px;
+    left: 353px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonSpa {
+    position: relative;
+    top: -672px;
+    left: 556px;
+  }
+}
+.pokeinfo1 .pokemonSpd {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -672px;
+  left: 556px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonSpd {
+    position: relative;
+    top: -360px;
+    left: 124px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonSpd {
+    position: relative;
+    top: -603px;
+    left: 353px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonSpd {
+    position: relative;
+    top: -672px;
+    left: 556px;
+  }
+}
+.pokeinfo1 .pokemonSpeed {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -672px;
+  left: 556px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokemonSpeed {
+    position: relative;
+    top: -360px;
+    left: 131px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokemonSpeed {
+    position: relative;
+    top: -603px;
+    left: 353px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokemonSpeed {
+    position: relative;
+    top: -672px;
+    left: 556px;
+  }
+}
+.pokeinfo1 .pokeMoves1 {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  position: relative;
+  top: -786px;
+  left: 778px;
+}
+@media (max-width: 425px) {
+  .pokeinfo1 .pokeMoves1 {
+    position: relative;
+    top: -446px;
+    left: 285px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .pokeinfo1 .pokeMoves1 {
+    position: relative;
+    top: -726px;
+    left: 577px;
+  }
+}
+@media (min-width: 1440px) {
+  .pokeinfo1 .pokeMoves1 {
+    position: relative;
+    top: -786px;
+    left: 778px;
+  }
+}
+
+h3 {
+  font-family: "Rammetto One", cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=output.css.map */
